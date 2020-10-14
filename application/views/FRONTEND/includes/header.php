@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,85 +26,104 @@
     <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/nice-select.css">
     <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/style.css">
     <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/responsive.css">
-    
-    
+
+
 </head>
 <style>
-    .zoom {
-  transition: transform .2s; /* Animation */
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-
 </style>
 <script>
 function hover(element) {
- element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/our story 2.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/fwd/our story 2.jpg');
 }
 
 function unhover(element) {
-  
-   element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/womens1.jpg');
+
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/sareepictures/womens1.jpg');
 }
 
 function hover1(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sportswearandjaketspictures/tshirt8.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/sportswearandjaketspictures/tshirt8.jpg');
 }
 
 function unhover1(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/formals1.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/formals1.jpg');
 }
+
 function hover2(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/kids trousers 1.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/fwd/kids trousers 1.jpg');
 }
 
 function unhover2(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/kids1.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/sareepictures/kids1.jpg');
 }
 
 function hover3(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/mask5.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/fwd/mask5.jpg');
 }
 
 function unhover3(element) {
 
-   element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/mask.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/sareepictures/mask.jpg');
 }
 
 function hover4(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/acc2.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/acc2.jpg');
 }
 
 function unhover4(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/speaker.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/speaker.jpg');
 }
 
 function hover5(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/tools4.png');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/tools4.png');
 }
 
 function unhover5(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/tool.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/tool.jpg');
 }
+
 function hover6(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/decor2.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/somemorepictures/decor2.jpg');
 }
 
 function unhover6(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/decor9.jpeg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/somemorepictures/decor9.jpeg');
 }
+
 function hover7(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/carpet8.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/carpet8.jpg');
 }
 
 function unhover7(element) {
-  element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/other1.jpg');
+    element.setAttribute('src', '<?=base_url('
+        theme / front - end / ')?>/assets/images/somemorepictures/other1.jpg');
 }
 </script>
 
@@ -128,15 +148,18 @@ function unhover7(element) {
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <div class="header-left d-flex align-items-center">
                             <!-- Logo -->
-                            <div class="logo" >
-                                <a href="<?=base_url()?>"><img src="<?=base_url('theme/front-end/')?>assets/images/logo.JPG" style="width:150px;" alt=""></a>
+                            <div class="logo">
+                                <a href="<?=base_url()?>"><img
+                                        src="<?=base_url('theme/front-end/')?>assets/images/logo.JPG"
+                                        style="width:150px;" alt=""></a>
                             </div>
                             <!-- Main-menu -->
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                  <li><a href="<?=base_url('Myaccount')?>">My Account</a></li>
-                                        <li><a href="<?=base_url('')?>">Home</a></li> 
+                                    <li><a href="<?=base_url('Myaccount')?>"><img src="https://ui-avatars.com/api/?length=1&name=Nischitha&rounded=true" style="width: 50px; margin-left: 8px;"></a></li>
+                                        <li><a href="<?=base_url('Myaccount')?>">My Account</a></li>
+                                        <li><a href="<?=base_url('')?>">Home</a></li>
                                         <li><a href="<?=base_url('Shop')?>">shop</a></li>
                                         <li><a href="about.html">About</a></li>
                                         <!-- <li><a href="blog.html">Blog</a>
@@ -149,14 +172,17 @@ function unhover7(element) {
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
-                            </div>   
+                            </div>
                         </div>
                         <div class="header-right1 d-flex align-items-center">
                             <!-- Social -->
                             <div class="header-social d-none d-md-block">
-                                <a href="https://twitter.com/TechHudson" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/hudsonnjexpo/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/hudsontech_e/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/TechHudson" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/hudsonnjexpo/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/hudsontech_e/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                             <!-- Search Box -->
                             <div class="search d-none d-md-block">
@@ -168,7 +194,9 @@ function unhover7(element) {
                                     </li>
                                     <li>
                                         <div class="card-stor">
-                                            <a class="link" href="<?=base_url('cart')?>" target="_blank"><img src="<?=base_url('theme/front-end/')?>assets/img/gallery/card.svg" alt=""></a>
+                                            <a class="link" href="<?=base_url('cart')?>" target="_blank"><img
+                                                    src="<?=base_url('theme/front-end/')?>assets/img/gallery/card.svg"
+                                                    alt=""></a>
                                             <span><?php 
                $user_id = base64_decode($this->session->userdata('customerId'));
                $res = getanydata('tbl_cart','tbl_user_id',$user_id); 
@@ -189,28 +217,32 @@ function unhover7(element) {
         </div>
         <!-- Header End -->
     </header>
-  
+
     <!-- header end -->
     <div class="menu-wrapper d-flex align-items-center justify-content-between">
         <div class="formSearch ex">
-   <form align="center" role="search" method="post" action="<?=base_url('mainSearch')?>" class="formSearch1">
-        <select name="product_category" onchange="location=this.value;" style="width:240px;height:50px;border-radius:5px;">
-           <option value="">All Categories</option>
-            <?php $cat =  getanydata('tbl_category','status','Active');
+            <form align="center" role="search" method="post" action="<?=base_url('mainSearch')?>" class="formSearch1">
+                <select name="product_category" onchange="location=this.value;"
+                    style="width:240px;height:50px;border-radius:5px;">
+                    <option value="">All Categories</option>
+                    <?php $cat =  getanydata('tbl_category','status','Active');
                 if(!empty($cat)){
                  foreach($cat as $row){ ?>
-                    <option value="<?=base_url('ProductList/').$row['id']?>"><?=ucfirst($row['category_name'])?></option>
-               <?php  } } ?>
-               </select>
-                                   
-        <input type="search" placeholder="Search Product" value="" required="" name="searchtext" style="width:137px;height:40px;border-radius:5px;float:left;border-width: 1px;margin-left: 10px;">
-        <div class="search1">
-        <button class="fa fa-search searchsubmit" type="submit" style="background-color:#9F78FF;width :50px;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
-        </div>  
-      </form></div></div>
+                    <option value="<?=base_url('ProductList/').$row['id']?>"><?=ucfirst($row['category_name'])?>
+                    </option>
+                    <?php  } } ?>
+                </select>
 
-
-        <!-- <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                <input type="search" placeholder="Search Product" value="" required="" name="searchtext"
+                    style="width:137px;height:40px;border-radius:5px;float:left;border-width: 1px;margin-left: 10px;">
+                <div class="search1">
+                    <button class="fa fa-search searchsubmit" type="submit"
+                        style="width :50px; background-color:#9F78FF;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="menu-wrapper d-flex align-items-center justify-content-between">
         <div class="formSearch">
             <form align="center" role="search" method="post" action="mainSearch.html" class="formSearch1">
                <select required="" name="product_category" style="width:240px;height:50px;border-radius:5px;" onchange="location=this.value;">

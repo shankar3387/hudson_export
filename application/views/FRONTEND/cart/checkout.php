@@ -4,30 +4,30 @@
         <h3 align="center">Checkout</h3>
     </div>
 </div>
-<div class="container">
+<div class="container" style="font-size: 15px;">
     <?php if(!empty($this->session->flashdata('errors'))){ ?>
     <div class="alert alert-danger alert-dismissible">
         <a href="<?=base_url('Checkout')?>" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <?php echo $this->session->flashdata('errors');?>
     </div>
     <?php } ?>
-    <form method="post" action="<?=base_url('PlaceOrder')?>" enctype="multipart/form-data">
-        <div class="row">
+    <form method="post"    action="<?=base_url('PlaceOrder')?>"   enctype="multipart/form-data" >
+        <div class="row" >
             <div class="col-lg-6">
-                <div class="card card-body">
+                <div class="card card-body" >
                     <h3 class="text-center mb-4">Billing details</h3>
 
                     <fieldset>
-                        <div class="form-group has-error">
-                            <input class="form-control" placeholder="First Name" name="billing_first_name"
+                        <div class="form-group has-error" >
+                            <input  style="font-size: 12px;padding: 17px;"class="form-control" placeholder="First Name" name="billing_first_name"
                                 type="text" required>
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="Last Name" name="billing_last_name"
+                            <input class="form-control input-lg"   style="font-size: 12px;padding: 17px;"placeholder="Last Name" name="billing_last_name"
                                 type="text" required>
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="company name (optional)"
+                            <input class="form-control input-lg"  style="font-size: 12px;padding: 17px;" placeholder="company name (optional)"
                                 name="billing_company" type="text">
                         </div>
                         <div class="form-group has-error mb-2">
@@ -40,8 +40,8 @@
                                 <?php }} ?>
                             </select>
                         </div>
-                        <div class="form-group has-error mb-2">
-                            <select class="form-control es-select-products" name="billing_state"
+                        <div class="form-group has-error form-row mx-auto">
+                            <select class="form-control" name="billing_state"
                                 placeholder="select a state.." style="width: 497px;" required>
                                 <option value="">select a state..</option>
                                 <?php if(!empty($state)){
@@ -51,27 +51,27 @@
                             </select>
                         </div><br /><br />
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="City" name="billing_city" type="text"
+                            <input class="form-control input-lg"   style="font-size: 12px;padding: 17px;"placeholder="City" name="billing_city" type="text"
                                 required>
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="Street address *" name="billing_address_1"
+                            <input class="form-control input-lg"  style="font-size: 12px;padding: 17px;"placeholder="Street address *" name="billing_address_1"
                                 type="text" required>
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="Apartment, suite, unit, etc. (optional) "
+                            <input class="form-control input-lg"   style="font-size: 12px;padding: 17px;"placeholder="Apartment, suite, unit, etc. (optional) "
                                 name="billing_address_2" type="text">
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="Postcode *" name="billing_postcode"
+                            <input class="form-control input-lg"  style="font-size: 12px;padding: 17px;"placeholder="Postcode *" name="billing_postcode"
                                 type="text" required>
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" placeholder="E-mail Address" name="billing_email"
+                            <input class="form-control input-lg"  style="font-size: 12px;padding: 17px;"placeholder="E-mail Address" name="billing_email"
                                 value="<?= $mailid ?>" type="text" readonly required>
                         </div>
                         <div class="form-group has-success">
-                            <input class="form-control input-lg" placeholder="Phone Number" name="billing_phone"
+                            <input class="form-control input-lg"   style="font-size: 12px;padding: 17px;"placeholder="Phone Number" name="billing_phone"
                                 type="text" value="<?=$phoneno?>" readonly required>
                         </div>
                         <!--input class="btn btn-lg btn-primary btn-block" value="Submit" type="submit"-->
@@ -85,7 +85,7 @@
                     <div class="shipping_address" style="display:none;">
                         <fieldset>
                             <div class="form-group has-error">
-                                <input class="form-control input-lg" placeholder="First Name" name="shipping_first_name"
+                                <input   style="font-size: 14px; padding: 17px;" class="form-control input-lg" placeholder="First Name" name="shipping_first_name"
                                     type="text">
                             </div>
                             <div class="form-group has-error">
@@ -147,6 +147,8 @@
         <thead>
             <tr>
                 <th scope="col">Product</th>
+                <th scope="col">Size</th>
+                <th scope="col">Quantity</th>
                 <th scope="col">Subtotal</th>
             </tr>
         </thead>
@@ -154,10 +156,12 @@
             <?php if(!empty($detail)){
             $totalPrice = 0;
             $delivery = 0;
+            $totalQuantity = 0;
             foreach($detail as $row){
             $pro_id = $row['tbl_product_id'];
            $res = getanydata('tbl_product','id',$pro_id,'Active','status');
            //print_r($res);
+           $totalQuantity +=(int)$row['tbl_quantity'];
            $img = $res[0]['product_pic'];
            $pro_name = $res[0]['product_name'];
            $brand_id = $res[0]['brand_id'];
@@ -178,9 +182,10 @@
                     <input type="hidden" name="key" value="<?= $mkey ?>" />
                     <input type="hidden" name="hash" value="<?= $hash ?>" />
                     <input type="hidden" name="txnid" value="<?= $tid ?>" />
-                    <?=$pro_name?> *
-                    <strong><?php if(!empty($row['tbl_quantity'])) { echo $row['tbl_quantity'];  }else{ echo 1; } ?></strong>
+                    <?=$pro_name?>
                 </td>
+                <td><?= $row['size']?></td>
+                <td><?php if(!empty($row['tbl_quantity'])) { echo $row['tbl_quantity'];  }else{ echo 1; } ?></td>
                 <td>$<?= (int)$row['tbl_product_price'] * (int)$row['tbl_quantity'] ?></td>
             </tr>
             <?php 
@@ -188,15 +193,16 @@
          }} ?>
 
             <tr>
-                <td>Subtotal</td>
-                <td>$<?= $totalPrice?></td>
+                <td colspan='3'>Subtotal</td>
+                <td >$<?= $totalPrice?></td>
             </tr>
             <tr>
-                <td>shipping</td>
+                <td colspan='3'>shipping</td>
                 <td><?php if(!empty($delivery)){ echo '$'.$delivery; }else{ ?>Free shipping <?php } ?></td>
             </tr>
             <tr>
-                <td>Total</td>
+                <td colspan='2'>Total</td>
+                <td><?= $totalQuantity ?></td>
                 <td>$<?=$totalPrice+$delivery?></td>
             </tr>
         </tbody>
