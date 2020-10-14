@@ -147,6 +147,8 @@
         <thead>
             <tr>
                 <th scope="col">Product</th>
+                <th scope="col">Size</th>
+                <th scope="col">Quantity</th>
                 <th scope="col">Subtotal</th>
             </tr>
         </thead>
@@ -154,10 +156,12 @@
             <?php if(!empty($detail)){
             $totalPrice = 0;
             $delivery = 0;
+            $totalQuantity = 0;
             foreach($detail as $row){
             $pro_id = $row['tbl_product_id'];
            $res = getanydata('tbl_product','id',$pro_id,'Active','status');
            //print_r($res);
+           $totalQuantity +=(int)$row['tbl_quantity'];
            $img = $res[0]['product_pic'];
            $pro_name = $res[0]['product_name'];
            $brand_id = $res[0]['brand_id'];
@@ -178,9 +182,10 @@
                     <input type="hidden" name="key" value="<?= $mkey ?>" />
                     <input type="hidden" name="hash" value="<?= $hash ?>" />
                     <input type="hidden" name="txnid" value="<?= $tid ?>" />
-                    <?=$pro_name?> *
-                    <strong><?php if(!empty($row['tbl_quantity'])) { echo $row['tbl_quantity'];  }else{ echo 1; } ?></strong>
+                    <?=$pro_name?>
                 </td>
+                <td><?= $row['size']?></td>
+                <td><?php if(!empty($row['tbl_quantity'])) { echo $row['tbl_quantity'];  }else{ echo 1; } ?></td>
                 <td>$<?= (int)$row['tbl_product_price'] * (int)$row['tbl_quantity'] ?></td>
             </tr>
             <?php 
@@ -188,15 +193,16 @@
          }} ?>
 
             <tr>
-                <td>Subtotal</td>
-                <td>$<?= $totalPrice?></td>
+                <td colspan='3'>Subtotal</td>
+                <td >$<?= $totalPrice?></td>
             </tr>
             <tr>
-                <td>shipping</td>
+                <td colspan='3'>shipping</td>
                 <td><?php if(!empty($delivery)){ echo '$'.$delivery; }else{ ?>Free shipping <?php } ?></td>
             </tr>
             <tr>
-                <td>Total</td>
+                <td colspan='2'>Total</td>
+                <td><?= $totalQuantity ?></td>
                 <td>$<?=$totalPrice+$delivery?></td>
             </tr>
         </tbody>

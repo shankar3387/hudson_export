@@ -2,7 +2,7 @@
 <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
 <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<div class="container" style="font-size: 12px;">
+<div class="container" >
   <div class="row">
     <div class="col-lg-12 jumbotron">
         <h3 align="center">Cart</h3>
