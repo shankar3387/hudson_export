@@ -65,7 +65,7 @@ class Welcome extends MY_Controller {
 	    $data['count']= $count = count($data['CatProduct']);
 	    $data["pagination"]=frontpagination('productList/'.$catId,$count);
 	    $data['layouts'] = $this->frontLayout($data);
-		$this->load->view('FRONTEND/product_category/index',$data);
+		$this->load->view('FRONTEND/product_category/',$data);
 	}
 public function products($proId){
     $data = array();

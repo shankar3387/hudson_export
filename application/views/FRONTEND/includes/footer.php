@@ -1,5 +1,6 @@
 <!--? Services Area Start -->
-<div class="categories-area section-padding40 gray-bg"  style="margin-top: 100px;">
+
+<div class="categories-area"  style="margin-top: 100px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -49,8 +50,8 @@
                 </div>
             </div>
         </div>
+
 <!--? Services Area End -->
-</main>
 <footer>
     <!-- Footer Start-->
     <div class="footer-area footer-padding" style="padding-top: 53px;">

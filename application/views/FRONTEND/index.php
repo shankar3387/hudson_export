@@ -25,7 +25,7 @@
                                     <span>0</span>
                                 </div>
                             </li>
-                        </ul>
+                        </ul>.
                     </div>
                 </div>
                 <!-- /End mobile  Menu-->
@@ -235,7 +235,7 @@
 <!-- Button -->
 
 </div>
-</div>
+    </div>
 <!--? New Arrival End -->
 <!--? collection -->
 <section class="collection section-bg2 section-padding30 section-over1 ml-15 mr-15" data-background="<?=base_url('theme/front-end/')?>assets/img/gallery/section_bg01.png">

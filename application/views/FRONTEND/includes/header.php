@@ -107,7 +107,7 @@ function unhover7(element) {
 }
 </script>
 
-<body class="full-wrapper">
+<body class="full-wrapper"  >
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -205,7 +205,7 @@ function unhover7(element) {
                                    
         <input type="search" placeholder="Search Product" value="" required="" name="searchtext" style="width:137px;height:40px;border-radius:5px;float:left;border-width: 1px;margin-left: 10px;">
         <div class="search1">
-        <button class="fa fa-search searchsubmit" type="submit" style="width :50px;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
+        <button class="fa fa-search searchsubmit" type="submit" style="background-color:#9F78FF;width :50px;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
         </div>  
       </form></div></div>
 
