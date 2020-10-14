@@ -43,7 +43,7 @@
                             <input class="form-control input-lg" placeholder="Confirm Password" name="password" value="" type="password">
                         </div-->
                         
-                        <input class="btn btn-lg btn-primary btn-block" value="Register"style="width:154px;height:40px ;border-radius:10px" type="submit">
+                        <input class="btn btn-lg btn-primary btn-block" value="Register" style="width:154px;height:40px ;border-radius:10px" type="submit">
                     </fieldset>
                  </form>
                 
