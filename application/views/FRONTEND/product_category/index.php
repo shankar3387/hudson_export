@@ -60,8 +60,7 @@
                                         <div class="popular-img">
                                             <img src="<?=base_url($row['product_pic'])?>" style="width:250px; height:250px;" alt="">
                                             <div class="favorit-items">
-                                            <?php echo $row['id']?>
-                                                <!-- <span class="flaticon-heart"></span> -->
+                                              <!-- <span class="flaticon-heart"></span> -->
                                                 <img onclick="wishlist(<?=$row['id']?>);" src="<?=base_url('theme/front-end/')?>assets/img/gallery/favorit-card.png"  alt="">
                                             </div>
                                         </div>

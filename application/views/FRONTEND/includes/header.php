@@ -127,7 +127,7 @@ function unhover7(element) {
 }
 </script>
 
-<body class="full-wrapper">
+<body class="full-wrapper"  >
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -157,6 +157,7 @@ function unhover7(element) {
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
+                                    <li><a href="<?=base_url('Myaccount')?>"><img src="https://ui-avatars.com/api/?length=1&name=Nischitha&rounded=true" style="width: 50px; margin-left: 8px;"></a></li>
                                         <li><a href="<?=base_url('Myaccount')?>">My Account</a></li>
                                         <li><a href="<?=base_url('')?>">Home</a></li>
                                         <li><a href="<?=base_url('Shop')?>">shop</a></li>
@@ -236,7 +237,7 @@ function unhover7(element) {
                     style="width:137px;height:40px;border-radius:5px;float:left;border-width: 1px;margin-left: 10px;">
                 <div class="search1">
                     <button class="fa fa-search searchsubmit" type="submit"
-                        style="width :50px;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
+                        style="width :50px; background-color:#9F78FF;height: 40px;border-radius:5px;border-width:1px;margin-bottom:10px;"></button>
                 </div>
             </form>
         </div>

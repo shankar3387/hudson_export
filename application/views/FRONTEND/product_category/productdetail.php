@@ -31,7 +31,7 @@
                     <input type = "hidden" id = "pricevalue<?php echo $Product[0]['id']; ?>" value= "<?php echo $Product[0]['product_price']; ?>" />
                     <b>$<?php echo $Product[0]['product_price']; ?></b>
                    
-                      <input type="number" id="quantity<?php echo $Product[0]['id']; ?>" onkeyup="checkqtystockip(this.value,<?=$Product[0]['id']?>)" min="1" max="25" style="width :70px;height: 50px;border-radius:5px"><br/><br/>
+                      <input type="number" value="1" id="quantity<?php echo $Product[0]['id']; ?>" onkeyup="checkqtystockip(this.value,<?=$Product[0]['id']?>)" min="1" max="25" style="width :70px;height: 50px;border-radius:5px"><br/><br/>
 
                       <span id="qtymess" style="color:red;"></span>
                         <li id="showavail" style="display:none;"><b>Availability:</b> 

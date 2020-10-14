@@ -50,7 +50,6 @@
     </div>
 </div>
 <!--? Services Area End -->
-</main>
 <footer>
     <!-- Footer Start-->
     <div class="footer-area footer-padding" style="padding-top: 53px;">
@@ -254,11 +253,9 @@ function wishlist(prdid) {
             if (tempdata.trim() != "") {
                 var values = JSON.parse(tempdata);
                 if (values.success == "1") {
-                    window.location.href = "<?php echo base_url("
-                    WishList "); ?>";
+                    window.location.href = "<?php echo base_url("WishList "); ?>";
                 } else {
-                    window.location.href = "<?php echo base_url("
-                    Login "); ?>";
+                    window.location.href = "<?php echo base_url("Login "); ?>";
                 }
             } else {
                 $(".addtocartres" + prdid).html("Something went wrong, Please try again later.");
@@ -270,6 +267,7 @@ function wishlist(prdid) {
 function addtocart(prdid) {
     var prdqty = $("#quantity" + prdid).val();
     var price = $("#pricevalue" + prdid).val();
+    console.log('kkk')
     var totalprice = Number(price * prdqty);
     $.ajax({
         type: "POST",
@@ -287,11 +285,9 @@ function addtocart(prdid) {
             if (tempdata.trim() != "") {
                 var values = JSON.parse(tempdata);
                 if (values.success == "1") {
-                    window.location.href = "<?php echo base_url("
-                    cart "); ?>";
+                    window.location.href = "<?php echo base_url("cart "); ?>";
                 } else {
-                    window.location.href = "<?php echo base_url("
-                    Login "); ?>";
+                    window.location.href = "<?php echo base_url("Login "); ?>";
                 }
             } else {
                 alert();
