@@ -111,7 +111,7 @@
                         <?php }}} ?>
                     </td>
             
-            <td>$<?=$row['tbl_product_price'] * $row['tbl_quantity'] ?></td>
+            <td>$<?=(int)$row['tbl_product_price'] * (int)$row['tbl_quantity'] ?></td>
          </tr>
          
                               

@@ -138,13 +138,13 @@ function unhover7(element) {
                                         <li><a href="<?=base_url('')?>">Home</a></li> 
                                         <li><a href="<?=base_url('Shop')?>">shop</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="blog.html">Blog</a>
+                                        <!-- <li><a href="blog.html">Blog</a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">Blog</a></li>
                                                 <li><a href="blog_details.html">Blog Details</a></li>
                                                 <li><a href="elements.html">Elements</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -162,7 +162,7 @@ function unhover7(element) {
                                 <ul class="d-flex align-items-center">
                                     <li class="mr-15">
                                         <div class="nav-search search-switch">
-                                            <i class="ti-search"></i>
+                                            <i class='ti-woocommerce-wishlist'></i>
                                         </div>
                                     </li>
                                     <li>
