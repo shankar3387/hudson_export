@@ -57,7 +57,7 @@
                   <input class="form-control input-lg" placeholder="Apartment, suite, unit, etc. (optional) " name="billing_address_2" type="text" >
                </div>
                <div class="form-group has-error">
-                  <input class="form-control input-lg" placeholder="Postcode *" name="billing_postcode" type="text" required>
+                  <input class="form-control input-lg" placeholder="Postcode *" name="billing_postcode" maxlength="6" type="text" required>
                </div>
                <div class="form-group has-error">
                   <input class="form-control input-lg" placeholder="E-mail Address" name="billing_email" value="<?= $mailid ?>" type="text" readonly required>

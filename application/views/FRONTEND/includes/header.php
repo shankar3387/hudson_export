@@ -34,6 +34,9 @@
   height: 80%;
   margin: 0 auto;
 }
+.error{
+  color: red;
+}
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -161,8 +164,8 @@ function unhover7(element) {
                             <div class="search d-none d-md-block">
                                 <ul class="d-flex align-items-center">
                                     <li class="mr-15">
-                                        <div class="nav-search search-switch">
-                                            <i class="ti-search"></i>
+                                        <div class="nav-search">
+                                            <i class="fab fa-gratipay"></i>
                                         </div>
                                     </li>
                                     <li>
