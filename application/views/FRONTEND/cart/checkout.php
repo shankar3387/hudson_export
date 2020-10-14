@@ -40,8 +40,8 @@
                                 <?php }} ?>
                             </select>
                         </div>
-                        <div class="form-group has-error mb-2">
-                            <select class="form-control es-select-products" name="billing_state"
+                        <div class="form-group has-error form-row mx-auto">
+                            <select class="form-control" name="billing_state"
                                 placeholder="select a state.." style="width: 497px;" required>
                                 <option value="">select a state..</option>
                                 <?php if(!empty($state)){
