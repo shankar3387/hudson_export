@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap sticky top menu, navbar, CSS examples" />
+<meta name="description" content="Bootstrap sticky header menu for any type of project, Bootstrap 4" />  
+
+<title>Demo - Sticky navbar sample. html code example </title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<style>
+body{
+background-color:white;
+}
+/* change the background color */
+.navbar-custom {
+    background-color: #ffffff;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #F827F6;
+    padding: 0.8rem 1rem;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: red;
+    padding: 1rem 1rem;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color: #ee4400; /* add background-color to active links */
+}.navbar-custom {
+    background-color: #ff5500;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: white;
+}
+.navbar-custom .dropdown-item {
+    color: black;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: red;
+    background-color: rgba(255,255,255,.5);
+}
+  .img-hover-zoom {
+			height: 300px; /* [1.1] Set it as per your need */
+			overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+		}
+		/* [2] Transition property for smooth transformation of images */
+		.img-hover-zoom img {
+			transition: transform .5s ease;
+		}
+		/* [3] Finally, transforming the image when container gets hovered */
+		.img-hover-zoom:hover img {
+			transform: scale(1.5);
+		}
+		.centered {
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: Goudy Old Style bold;
+		}
+		@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+		<!--------------------->
+		 .stretch-card>.card {
+     width: 100%;
+     min-width: 100%
+ }
+
+
+
+ .flex {
+     -webkit-box-flex: 1;
+     -ms-flex: 1 1 auto;
+     flex: 1 1 auto
+ }
+
+ @media (max-width:991.98px) {
+     .padding {
+         padding: 1.5rem
+     }
+ }
+
+ @media (max-width:767.98px) {
+     .padding {
+         padding: 0rem
+     }
+ }
+
+ .padding {
+     padding: 3rem
+ }
+
+ .owl-carousel .item {
+     margin: 3px
+ }
+
+ .owl-carousel .item img {
+     display: block;
+     width: 100%;
+     height: auto
+ }
+
+ .owl-carousel .item {
+     margin: 3px
+ }
+
+ .owl-carousel {
+     margin-bottom: 15px
+ }
+ [class^="icon-btn"] {
+                height: 70px;
+                width: 70px;
+                border: 0;
+                color: #fff;
+                cursor: pointer;
+                font-size: 20px;
+                line-height: 30px;
+                transition: ease-in-out .3s;
+                border-radius: 50px;
+                margin-left: 24px;
+                margin-top: 10px;
+                background-color: #fff;
+            }
+			
+            .twitter {
+                color: #4099FF;
+            }
+			.icon-btn:hover {
+                transform: scale(1.10);
+                color: #FFFFFF;
+            }
+			            .twitter:hover {
+                background-color: #4099FF;
+            }
+			a.link {
+                color: inherit;}
+				.heart:hover {
+                background-color: red;}
+				            .heart {
+                color: red;}
+				
+				.car:hover {
+                transform: scale(1.10);
+               background-color: red;}
+			   .car {
+                color: inherit;
+				color:white}
+				.car:hover {
+                background-color: red;
+            }
+			      #icons{
+        background-color: black;
+        justify-content: center;
+         width:245px;
+		 margin-left:0px;
+        color: white;
+      }
+	 @import url(https://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+*{
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+
+
+.cont{
+  width: 93%;
+  max-width: 350px;
+  text-align: center;
+  margin: 4% auto;
+  padding: 30px 0;
+  background: ;
+  color: #EEE;
+  border-radius: 5px;
+  border: thin solid #444;
+  overflow: hidden;
+}
+
+hr{
+  margin: 20px;
+  border: none;
+  border-bottom: thin solid rgba(255,255,255,.1);
+}
+
+div.title{
+  font-size: 2em;
+}
+
+h1 span{
+  font-weight: 300;
+  color: #Fd4;
+}
+
+div.stars{
+  width: 270px;
+  display: inline-block;
+}
+
+input.star{
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content:'\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+
+input.star-5:checked ~ label.star:before {
+  color:#FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #F62;
+}
+
+label.star:hover{
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before{
+  content:'\f006';
+  font-family: FontAwesome;
+}
+
+.rev-box{
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .25s;
+}
+
+textarea.review{
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+textarea.reviews{
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+
+label.review{
+  display: block;
+  transition:opacity .25s;
+}
+
+
+
+input.star:checked ~ .rev-box{
+  height: 125px;
+  overflow: visible;
+}
+
+.yes{
+	 background-color:;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  text-align:left;
+  color:black;
+  padding:10px;
+ }
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<header class="section-header py-4 bg-light">
+
+	
+  
+<div class="input-group mb-4 border rounded-pill p-2" style="border: 1px solid white!important;">
+            <div class="input-group-prepend border-0">
+              <a href="index.php"><img src="images/Logo.jpg" align="left" alt=""  style="height: 100px; width: 230px; margin-left:20px; margin-right: 0px;"></a>
+            </div>
+			<form align="center" role="search" method="get" class="woocommerce-product-search" action="https://demo.mysterythemes.com/easy-store-pro/" style="margin-left:120px" >
+                                <select class="es-select-products" name="product_category" style="margin-top:10px; width:240px;height:50px;border-radius:5px;margin-left:15px">
+                                  <option value="">All Categories</option>
+                                  <option value="girls-collection"  >Girls Collection</option>
+                                  <option value="kids-collection"  >Kids Collection</option>
+                                  <option value="women-collection"  >Women Collection</option>
+																	<option value="women-collection"  >Mask</option>
+                                </select>
+                                 
+    <form   class="search" action="/action_page.php">
+   <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search Product" value="" name="s" style="margin-top:10px;width:240px;height:50px;border-radius:5px"/>
+                        <button class="fa fa-search searchsubmit" type="submit" style="width :70px;height: 50px;border-radius:5px"></button>
+                        <input type="hidden" name="post_type" value="product" />
+                    </form><!-- .woocommerce-product-search -->
+                <!-- .advance-product-search -->
+			 <div class="social" style="margin-left:100px">
+                                <button class="icon-btn twitter">
+                                    <a class="link" href=" https://www.linkedin.com/in/quality-testing-06766718/" target="_blank">
+                                        <i class="fa fa-shopping-bag">
+										<span class="count">0</span></i>
+                                    </a></button>
+									<button class="icon-btn heart">
+                                    <a class="link" href=" https://www.linkedin.com/in/quality-testing-06766718/" target="_blank">
+                                        <i class="fa fa-heart">
+										<span class="count">0</span></i>
+                                    </a></button>
+									</div>
+				</form>
+				</div>
+				
+    </section>	
+</header> <!-- section-header.// -->
+<!-- ========================= SECTION CONTENT ========================= -->
+
+<nav class="navbar navbar-expand-lg  navbar-custom sticky-top bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom" >
+        <span class="navbar-toggler-icon"><i class="fa fa-list"></i></span>
+    </button>
+    
+    <div class="navbar-collapse collapse" id="navbarCustom">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"><i class="fa fa-home"> </i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Typography</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shop </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a <a class="dropdown-item" href="men.html">Men collection</a>
+                    <a class="dropdown-item" href="women.html">Women collection</a>
+                    <a class="dropdown-item" href="kids.html">kids collection</a>
+					 <a class="dropdown-item" href="mask.html">Mask</a>
+                </div>
+            </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+            </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+</nav>
+
+<section class="section-content py-5">
+<div class="row">
+	<div class="col-lg-12 jumbotron">
+      <h1 align="center">High Quality Winter Jacket Kids </h1>      
+    </div></div>
+	
+
+<div class="container yes">
+		 
+		 <div class="row ">
+	<div class="col-md-6">
+      <div class="card" style="width:300px; margin-left:190px">
+	  <div class="card-body">
+      
+    <img class="img1" src="images/shirts/1.jpg" alt="roadster" width="250" height="300"></div>
+    
+    </div>
+  </div>
+  <div class="col-md-6">
+  <h4 style="margin-top:100px">$250</h4>
+  <p>Cupcake ipsum dolor sit amet cheesecake sesame snaps danish. Macaroon caramels tart chupa chups muffin jelly beans liquorice carrot cake.
+
+High Quality Winter Jacket Kids quantity</p>
+<form>
+<input type="number" name="quantity" min="1" max="25" style="width :70px;height: 50px;border-radius:5px">
+ <button class="submit" type="submit" style="width :170px;height: 50px;border-radius:5px">Add to cart</button></form>
+  </div>
+    </div>
+</br>
+<!-------------------------->
+  <h2></h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Description</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Reviwes</a>
+    </li>
+   
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"></br>
+      <h3 align="center">Description</h3>
+      <p>Cupcake ipsum dolor sit amet cheesecake sesame snaps danish. Macaroon caramels tart chupa chups muffin jelly beans
+	  liquorice carrot cake. Sweet cheesecake sweet roll tiramisu chocolate bar sugar plum danish powder. Candy ice cream liquorice. Oat cake sweet sweet chocolate bar halvah lollipop caramels candy. Lollipop tiramisu soufflé jelly beans donut bonbon brownie. Toffee caramels sweet.
+	  Candy candy canes halvah lollipop.</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"></br>
+      <h3 align="center">Reviwes</h3>
+	  
+      <p align="center"> Be the first to review “Classic Camera With Amazing Features”</br>
+Your email address will not be published. Required fields are marked *.</p>
+
+<div class="cont">
+<div class="stars">
+<form action="">
+  <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+  <label class="star star-5" for="star-5-2"></label>
+  <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+  <label class="star star-4" for="star-4-2"></label>
+  <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+  <label class="star star-3" for="star-3-2"></label>
+  <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+  <label class="star star-2" for="star-2-2"></label>
+  <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+  <label class="star star-1" for="star-1-2"></label>
+  <div class="rev-box">
+   <textarea class="reviews" col="10" name="review"placeholder="Name"></textarea>
+   <textarea class="reviews" col="10" name="review"placeholder="Email"></textarea>
+    <textarea class="review" col="30" name="review"placeholder="comment"></textarea>
+    <label class="review" for="review" type="submit"></label>
+	<button class="submit" type="submit" style="width :170px;height: 50px;border-radius:5px">submit</button>
+  </div>
+</form>
+</div>
+</div>
+
+
+    </div>
+   
+  </div>
+
+
+<!------------------------------------->
+ 
+       <h4>Related products</h4>      
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width:300px">
+    <img class="img1" src="images/Pullover/1.jpeg" alt="roadster" width="300" height="300">
+    <div class="card-body">
+      <h4 class="card-title">Kappa raincoat</h4>
+      <p class="card-text"> 12.0$</p>
+      <span class="row justify-center" id="icons">
+      <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width:300px">
+    <img class="card-img-top" src="images/Pullover/2.jpeg" alt="roadster" width="300" height="300">
+    <div class="card-body">
+      <h4 class="card-title">Kappa pullover</h4>
+      <p class="card-text"> 10.0$</p>
+      <span class="row justify-center" id="icons">
+      <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width:300px">
+    <img class="card-img-top" src="images/Pullover/3.jpeg" alt="roadster" width="300" height="300">
+    <div class="card-body">
+      <h4 class="card-title">Kappa water proof</h4>
+      <p class="card-text"> 12.0$</p>
+      <span class="row justify-center" id="icons">
+      <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+    </div>
+  </div>
+  </div></section>
+  <footer style="background:black ;">
+<div class = "container">
+<div class="row" style="color:white;margin-top:10px">
+<div class="col-lg-4">
+<div class="input-group-prepend border-0">
+              <a href="index.php"><img src="images/Logo.jpg" align="left" alt=""  style="height: 50px; width: 130px; margin-left:20px; margin-right: 0px; margin-top:10px"></a>
+            </div>
+			<p style="color;white">Beautifully design e-commerce theme fully compatible with most popular WooCommerce plugin. The theme comes with clean and elegant design and developer friendly. It is fully responsive, translation ready, SEO friendly and compatible with WooCommerce, YITH WooCommerce Wishlist and popular plugin.</p>
+</div>
+<div class="col-lg-4">
+ <div class="mx-auto">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LINKS</h5>
+                  <ul class="list-unstyled mb-5">
+                    <li class="mb-2"><img src="images/apple.png" alt="app store"style="width:200px;"></a></li>
+                    <li><a href="#"><img src="images/google.png" alt="google playstore"style="width:200px;"></a></li>
+                  </ul>
+                </div>
+</div>
+<div class="col-lg-4">
+<h5 class="font-weight-bold text-uppercase mt-3 mb-4">GALLERY</h5>
+ <img class="card-img-top"
+            src="images/i.jpeg" alt="Card image cap" style="width:30%;height: 100px;">
+			<img class="card-img-top"
+            src="images/m.jpeg" alt="Card image cap" style="width:30%;height: 100px;">
+			<img class="card-img-top"
+            src="https://www.telegraph.co.uk/content/dam/news/2017/09/02/john-lewis-3_trans%2B%2BKBdCtZx_rQsp8pxhWsftHR5vMhrd6fDtOqLr0eX_ags.jpg" alt="Card image cap" style="width:30%;height: 100px;">
+</div>
+</div>
+<div class="container d-md-flex py-4">
+		<div class="mr-md-auto text-center text-md-left">
+			<div class="copyright">
+				 <h6 class="footer-company-name"style="color:white;  font-family: Goudy Old Style; margin-left:0px">All Rights Reserved. &copy; 2020</h6>
+			</div>
+		</div>
+	</div>
+</div>
+	</footer>
+</body>
+</html>
