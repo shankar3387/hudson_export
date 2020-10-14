@@ -41,33 +41,33 @@
 
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
-	        	<label for="account_first_name" class="">Full name&nbsp;<span style="color:red;">*</span></label>
+	        <div class="col-md-3">
+	        	<label for="account_first_name">Full name&nbsp;<span style="color:red;">*</span></label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="text" class="form-control input-lg" name="first_name" id="account_first_name" autocomplete="given-name" value="<?php if(!empty($customer)){ $name = explode(" ",$customer[0]['full_name']); echo $name[0]; } ?>" />
+	        <div class="col-md-7 pull-left">
+	        	<input type="text" class="form-control input-lg" name="first_name" id="account_first_name" autocomplete="given-name" value="<?php if(!empty($customer)){ $name = explode(" ",$customer[0]['full_name']); echo $name[0]; } ?>" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
 
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-3">
 	        	<label for="account_email">Email address&nbsp;<span style="color:red;">*</span></label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="email" class="form-control input-lg" name="email" id="account_email" autocomplete="email" value="<?php if(!empty($customer)){ echo $customer[0]['email']; } ?>" />
+	        <div class="col-md-7 pull-left" >
+	        	<input type="email" class="form-control input-lg" name="email" id="account_email" autocomplete="email" value="<?php if(!empty($customer)){ echo $customer[0]['email']; } ?>" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
 
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-3">
 	        	<label for="account_email">Mobile No&nbsp;<span style="color:red;">*</span></label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="number" class="form-control input-lg" name="mobile_no" id="account_email" autocomplete="mobile_no" value="<?php if(!empty($customer)){ echo $customer[0]['mobile_no']; } ?>" />
+	        <div class="col-md-7 pull-left" >
+	        	<input type="number" class="form-control input-lg" name="mobile_no" id="account_email" autocomplete="mobile_no" value="<?php if(!empty($customer)){ echo $customer[0]['mobile_no']; } ?>" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
@@ -75,33 +75,33 @@
 	<legend>Password change</legend>
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-3">
 	        	<label for="password_current">Current password</label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="password" class="form-control input-lg" name="oldpassword" id="password_current" autocomplete="off" />
+	        <div class="col-md-7 pull-left" >
+	        	<input type="password" class="form-control input-lg" name="oldpassword" id="password_current" autocomplete="off" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
 
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-3">
 	        	<label for="password_1">New password</label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="password" class="form-control input-lg" name="newpassword" id="password_1" autocomplete="off" />
+	        <div class="col-md-7 pull-left" >
+	        	<input type="password" class="form-control input-lg" name="newpassword" id="password_1" autocomplete="off" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
 
 	<div class="form-group">
 	   <div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-3">
 	        	<label for="password_2">Confirm new password</label>
 	        </div>
-	        <div class="col-md-6 pull-left" >
-	        	<input type="password" class="form-control input-lg" name="newconfirm" id="password_2" autocomplete="off" />
+	        <div class="col-md-7 pull-left" >
+	        	<input type="password" class="form-control input-lg" name="newconfirm" id="password_2" autocomplete="off" style="padding: 1.375rem; font-size:13px;"/>
 	        </div>
 	   </div>
 	</div>
