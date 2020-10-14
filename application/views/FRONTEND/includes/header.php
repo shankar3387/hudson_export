@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/style.css">
     <link rel="stylesheet" href="<?=base_url('theme/front-end/')?>assets/css/responsive.css">
     
+    
 </head>
 <style>
     .zoom {
