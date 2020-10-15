@@ -22,10 +22,10 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-6">
-                    <img src="<?=base_url().$Product[0]['product_pic']?>" alt="" style="width: 80%;">
+                <div class="col-6">
+                    <img class='img-fluid' src="<?=base_url().$Product[0]['product_pic']?>" alt="">
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-6">
+                <div class="col-6">
                     <b><?=ucwords(getanyname('tbl_product','product_name',$proId))?></b>
                     <p class="box"><?php echo ucwords($Product[0]['short_description']); ?></p>
                     <input type = "hidden" id = "pricevalue<?php echo $Product[0]['id']; ?>" value= "<?php echo $Product[0]['product_price']; ?>" />
@@ -38,8 +38,8 @@
                         <span class="instock" style="display:none;color:green;">In Stock</span> 
                         <span class="outstock" style="display:none;color:red;">Out Of Stock</span>
                         </li>
-                      <ul class='mb-5 form-group form-row col-md-6'>
-                          <div class="col-md-4=">
+                      <ul class='form-group form-row col-md-6'>
+                          <div class="col-md-4 form-group">
                               <?php foreach ($productmanagement as $key) { ?>
                               <select class='' name="" id="">
                                 <?php foreach (explode(' ',$key['size']) as $key1) { ?>
@@ -47,7 +47,7 @@
                               <?php } ?>
                               </select>
                           </div>
-                         <div class="col-md-4">
+                         <div class="col-md-4 form-group">
                               <select class='' name="" id="">
                                   <?php foreach (explode(' ',$key['color_name']) as $key1) { ?>
                                     <option value=""><?= $key1 ?></option>
@@ -58,7 +58,7 @@
                         <?php  } ?>
                       </ul>
                       
-                    <div class="submit-info" sytle="margin-bottom:50px">
+                    <div class="submit-info">
                         <button class="submit-btn2" onclick="addtocart(<?=$Product[0]['id']?>);" type="submit" style="width:30%;height:40px;border-radius:14px;">Add To Cart</button>
                     </div><br>
                     <div class="submit-info">
@@ -87,10 +87,6 @@
             </div>
             
         </div>
-
-
-
-  <br><br>
 
  
 
@@ -211,15 +207,6 @@
     </div>
    
   </div>
-
-
-
-
-
-
-
-
-
 </div>
 </div>
 <?php echo $layouts["footer"]; ?>

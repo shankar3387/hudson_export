@@ -6,10 +6,10 @@
          <h1 align="center">My Account </h1>
       </div>
    </div>
-   <div class="container yes">
+   <div class="container">
       <div class="row">
-         <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
+         <div class="col-md-2">
+            <div class="card">
                <ul class="list-group list-group-flush">
                   <li class="list-group-item"><a style="color:black;" href="<?=base_url('Myaccount')?>">Dashboard</a></li>
                   <li class="list-group-item"><a style="color:black;" href="<?=base_url('OrderHistory')?>">Orders</a></li>
@@ -54,5 +54,7 @@
          </div>
       </div>
    </div>
+</div>
+<div></div>
 </section>
-<?=$layouts['footer']?>
+<?= $layouts['footer']?>

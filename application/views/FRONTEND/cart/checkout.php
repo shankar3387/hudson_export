@@ -31,8 +31,8 @@
                                 name="billing_company" type="text">
                         </div>
                         <div class="form-group has-error mb-2">
-                            <select class="form-control es-select-products" name="billing_country"
-                                placeholder="select a country/region.." style="width: 497px;" required>
+                            <select class="form-control" name="billing_country"
+                                placeholder="select a country/region.." required>
                                 <option value="">select a country/region..</option>
                                 <?php if(!empty($country)){
                         foreach($country as $row){ ?>
@@ -98,23 +98,25 @@
                             </div>
                             <div class="form-group has-error">
                                 <select class="form-control es-select-products" name="shipping_country"
-                                    placeholder="select a country/region.." style="width: 497px;">
+                                    placeholder="select a country/region..">
                                     <option value="">select a country/region..</option>
                                     <?php if(!empty($country)){
-                     foreach($country as $row){ ?>
+                                      foreach($country as $row){ ?>
                                     <option value="<?=$row['id']?>"><?=ucfirst($row['name'])?></option>
                                     <?php }} ?>
                                 </select>
-                            </div><br /><br /><br />
+                            </div>
+                            
                             <div class="form-group has-error">
                                 <select class="form-control es-select-products" name="shipping_state"
-                                    placeholder="select a state.." style="width: 497px;">
+                                    placeholder="select a state..">
                                     <?php if(!empty($state)){
                         foreach($state as $row){ ?>
                                     <option value="<?=$row['id']?>"><?=ucfirst($row['name'])?></option>
                                     <?php }} ?>
                                 </select>
-                            </div><br /><br />
+                            </div>
+                            
                             <div class="form-group has-error">
                                 <input class="form-control input-lg" placeholder="City" name="shipping_city"
                                     type="text">

@@ -25,16 +25,16 @@
         <div class="col-md-6 mx-auto">
                 
                     <h3 class="text-center mb-4" style="color:black">  Register</h3>
-                    <form method="post"  action="<?=base_url('dosignup')?>" >
+                    <form id='registration_form' method="post"  action="<?=base_url('dosignup')?>" >
                     <fieldset>
-                <div class="form-group has-error">
-                            <input class="form-control input-lg"  style="width:250px;height:40px;font-size:85%" placeholder="Please Enter Full Name" name="name" type="text">
+                     <div class="form-group has-error">
+                            <input class="form-control input-lg"  style="width:250px;height:40px;font-size:85%" placeholder="Please Enter Full Name *" name="name" type="text">
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg"  style="width:250px;height:40px;font-size:85%"placeholder="Please Enter Email" name="email" type="email">
+                            <input class="form-control input-lg"  style="width:250px;height:40px;font-size:85%"placeholder="Please Enter Email *" name="email" type="email">
                         </div>
                         <div class="form-group has-error">
-                            <input class="form-control input-lg" style="width:250px;height:40px;font-size:85%" pattern="[0-9]{10}" title="10 digit mobile number" name="mobile" placeholder="Please Enter Mobile No" required type="number">
+                            <input class="form-control input-lg" style="width:250px;height:40px;font-size:85%"  name="mobile" placeholder="Please Enter Mobile No *" required>
                         </div>
                         <div class="form-group has-success">
                             <input class="form-control input-lg"  style="width:250px;height:40px;font-size:85%"placeholder="Password" name="password" value="" type="password">
@@ -63,10 +63,10 @@
         <div class="col-md-6 mx-auto">
                 <div class="card card-body" style="width:300px">
                     <h3 class="text-center mb-4">Login</h3>
-                    <form action="<?=base_url('dologin')?>" method="post">
+                    <form id='login_form' action="<?=base_url('dologin')?>" method="post">
                     <fieldset>
-                        <div class="form-group has-error">
-                            <input class="form-control input-lg" pattern="[0-9]{10}" title="Enter only number , only 10 digit"  style="width:250px;height:40px;font-size:85%" name="mobile" type="number" placeholder="Mobile No">
+                        <div class="form-group">
+                            <input class="form-control input-lg"   style="width:250px;height:40px;font-size:85%" name="mobile" placeholder="Mobile No">
                         </div>
                         <div class="form-group has-success">
                             <input class="form-control input-lg" placeholder="Password" name="password"   style="width:250px;height:40px;font-size:85%"value="" type="password">
@@ -85,3 +85,107 @@
   </div>
 </div>
 <?=$layouts['footer']?>
+
+<script>
+$('#login_form').validate({
+  rules:{
+    mobile:{
+        minlength:10,
+        maxlength:10,
+        required:true,
+        number:true
+    },
+    password:{
+      required:true,
+
+    }
+  
+  },
+  messages:{
+    mobile:{
+      required:"<span style='color:red'>Please Enter Your Mobile Number</span>",
+      minlength:"<span style='color:red'>Minimum 10</span>",
+      number:"<span style='color:red'>Please enter numbers Only</span>",
+    },
+    password:{
+      required:"<span style='color:red'>password</span>",
+    },
+    
+  },
+  // submitHandler:function(form){
+  //       var formdata = new FormData(form);
+  //       $.ajax({
+  //         url:'<?php base_url()?>dologin',
+  //         data:formdata,
+  //         type:'post',
+  //         dataType:'json',
+  //         processData: false,
+  //       contentType: false,
+  //       success:function(data){  
+  //           console.log(data);
+  //       },
+  //       error:function(data){
+  //           console.log(data);
+  //       }
+
+  //     })
+  //   },
+});
+$('#registration_form').validate({
+  rules:{
+    name:'required',
+    email:{
+      required:true,
+      email:true,
+    },
+    mobile:{
+        minlength:10,
+        maxlength:10,
+        required:true,
+        number:true
+    },
+    password:{
+      required:true,
+
+    }
+  
+  },
+  messages:{
+    name:{
+      required:"<span style='color:red'>Please Enter Your Name</span>",
+    },
+
+    email:{
+      required:"<span style='color:red'>Required Email</span>",
+      email:"<span style='color:red'>Valid Email Required</span>"
+    },
+    mobile:{
+      required:"<span style='color:red'>Please Enter Your Mobile Number</span>",
+      minlength:"<span style='color:red'>Minimum 10</span>",
+      number:"<span style='color:red'>Please enter numbers Only</span>",
+    },
+    password:{
+      required:"<span style='color:red'>Password</span>",
+    },
+    
+  },
+  submitHandler:function(form){
+        var formdata = new FormData(form);
+        $.ajax({
+          url:'<?php base_url()?>dologin',
+          data:formdata,
+          type:'post',
+          dataType:'json',
+          processData: false,
+        contentType: false,
+        success:function(data){  
+            console.log(data);
+        },
+        error:function(data){
+            console.log(data);
+        }
+
+      })
+    },
+});
+</script>

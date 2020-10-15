@@ -45,85 +45,69 @@
 </style>
 <script>
 function hover(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/fwd/our story 2.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/our story 2.jpg');
 }
 
 function unhover(element) {
 
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/sareepictures/womens1.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/womens1.jpg');
 }
 
 function hover1(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/sportswearandjaketspictures/tshirt8.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sportswearandjaketspictures/tshirt8.jpg');
 }
 
 function unhover1(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/formals1.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/formals1.jpg');
 }
 
 function hover2(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/fwd/kids trousers 1.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/kids trousers 1.jpg');
 }
 
 function unhover2(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/sareepictures/kids1.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/kids1.jpg');
 }
 
 function hover3(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/fwd/mask5.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/fwd/mask5.jpg');
 }
 
 function unhover3(element) {
 
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/sareepictures/mask.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/sareepictures/mask.jpg');
 }
 
 function hover4(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/acc2.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/acc2.jpg');
 }
 
 function unhover4(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/speaker.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/speaker.jpg');
 }
 
 function hover5(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/tools4.png');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/tools4.png');
 }
 
 function unhover5(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/tool.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/tool.jpg');
 }
 
 function hover6(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/somemorepictures/decor2.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/decor2.jpg');
 }
 
 function unhover6(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/somemorepictures/decor9.jpeg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/decor9.jpeg');
 }
 
 function hover7(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/picturesforhudsonwebsite/carpet8.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/picturesforhudsonwebsite/carpet8.jpg');
 }
 
 function unhover7(element) {
-    element.setAttribute('src', '<?=base_url('
-        theme / front - end / ')?>/assets/images/somemorepictures/other1.jpg');
+    element.setAttribute('src', '<?=base_url('theme/front-end/')?>/assets/images/somemorepictures/other1.jpg');
 }
 </script>
 

@@ -162,7 +162,7 @@
 <!-- JS here -->
 <!-- Jquery, Popper, Bootstrap -->
 <script src="<?=base_url('theme/front-end/')?>/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="<?=base_url('theme/front-end/')?>/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<?=base_url('theme/front-end/')?>assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/popper.min.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/bootstrap.min.js"></script>
 
@@ -191,14 +191,14 @@
 <!-- contact js -->
 <script src="<?=base_url('theme/front-end/')?>/assets/js/contact.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/jquery.form.js"></script>
-<script src="<?=base_url('theme/front-end/')?>/assets/js/jquery.validate.min.js"></script>
+<script src="<?=base_url('theme/front-end/')?>assets/js/jquery.validate.min.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/mail-script.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/jquery.ajaxchimp.min.js"></script>
 
 <!-- Jquery Plugins, main Jquery -->
 <script src="<?=base_url('theme/front-end/')?>/assets/js/plugins.js"></script>
 <script src="<?=base_url('theme/front-end/')?>/assets/js/main.js"></script>
-<script src="<?=base_url()?>theme/backend/assets/js/jquery-3.5.1.min.js"></script>
+<!-- <script src="<?=base_url()?>theme/backend/assets/js/jquery-3.5.1.min.js"></script> -->
 
 <script>
 function checkqtystockip(qty, proid) {

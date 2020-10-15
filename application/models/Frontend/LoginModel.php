@@ -16,7 +16,8 @@ Class LoginModel extends CI_Model
 		    return trim($return); 
 	}
     public function dologin(){
-        $data = array();
+		$data = array();
+		var_dump($this->input->post('mobile'));
 	    $data['refresh'] = 0;
 		$mobile 	   =  preg_replace('/[^A-Za-z0-9\-]/', '', $this->input->post('mobile'));//$this->checkpostinput('mobile');
 		$password  =  preg_replace('/[^A-Za-z0-9\-]/', '', $this->input->post('password'));//$this->checkpostinput('password');
