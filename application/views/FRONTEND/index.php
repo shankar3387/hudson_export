@@ -78,7 +78,7 @@
         </div>
 <!-- Popular Items End -->
 <!--? New Arrival Start -->
-<div class="new-arrival">
+<div class="new-arrival"   style="margin: 0px auto; width: 92%;">
     <div class="container">
         <!-- Section tittle -->
         <div class="row justify-content-center">

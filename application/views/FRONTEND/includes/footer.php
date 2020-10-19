@@ -1,7 +1,7 @@
 <!--? Services Area Start -->
 <div class="categories-area">
     <div class="container-fluid">
-        <div class="row" style="padding-top: 61px;">
+        <div class="row" style="padding-top: 61px;     padding-right: 52px;">
             <div class="col-lg-3 col-md-6 col-sm-6 mt-10">
                 <div class="single-cat">
                     <div class="cat-icon pt-6">
