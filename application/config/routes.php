@@ -156,3 +156,8 @@ $route['Footer/Termsofuse.html'] = 'footer/Termsofusepage';
 $route['Footer/services.html'] = 'footer/servicespage';
 $route['Footer/contactus.html'] = 'footer/contactuspage';
 $route['product_details.html/(:num)'] = 'welcome/products/$1';
+
+
+// payment router
+$route['paypal/(:num)'] = 'PaypalController/buyProduct/$1';
+$route['paypalindex'] = 'PaypalController/index';

@@ -22,22 +22,17 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <img class='img-fluid' src="<?=base_url().$Product[0]['product_pic']?>" alt="">
+                <div class="col-6 ">
+                    <img class='embed-responsive embed-responsive-4by3' height='400px' src="<?=base_url().$Product[0]['product_pic']?>" alt="">
                 </div>
                 <div class="col-6">
                     <b><?=ucwords(getanyname('tbl_product','product_name',$proId))?></b>
                     <p class="box"><?php echo ucwords($Product[0]['short_description']); ?></p>
                     <input type = "hidden" id = "pricevalue<?php echo $Product[0]['id']; ?>" value= "<?php echo $Product[0]['product_price']; ?>" />
-                    <b>$<?php echo $Product[0]['product_price']; ?></b>
-                   
-                      <input type="number" value="1" id="quantity<?php echo $Product[0]['id']; ?>" onkeyup="checkqtystockip(this.value,<?=$Product[0]['id']?>)" min="1" max="25" style="width :70px;height: 50px;border-radius:5px"><br/><br/>
-
-                      <span id="qtymess" style="color:red;"></span>
-                        <li id="showavail" style="display:none;"><b>Availability:</b> 
-                        <span class="instock" style="display:none;color:green;">In Stock</span> 
-                        <span class="outstock" style="display:none;color:red;">Out Of Stock</span>
-                        </li>
+                   <div class='form-inline form-group-lg'>
+                   <b>$<?php echo $Product[0]['product_price']; ?></b>
+                    <span> <input style='font-size:2rem' class='form-control-lg ml-2 form-group-lg' type="number" value="1" id="quantity<?php echo $Product[0]['id']; ?>" onkeyup="checkqtystockip(this.value,<?=$Product[0]['id']?>)" min="1" max="25"></span>
+                   </div>
                       <ul class='form-group form-row col-md-6'>
                           <div class="col-md-4 form-group">
                               <?php foreach ($productmanagement as $key) { ?>
@@ -57,6 +52,12 @@
                          </div>
                         <?php  } ?>
                       </ul>
+                      <span id="qtymess" style="color:red;"></span>
+                        <li id="showavail" style="display:none;"><b>Availability:</b> 
+                        <span class="instock" style="display:none;color:green;">In Stock</span> 
+                        <span class="outstock" style="display:none;color:red;">Out Of Stock</span>
+                        </li>
+                    
                       
                     <div class="submit-info">
                         <button class="submit-btn2" onclick="addtocart(<?=$Product[0]['id']?>);" type="submit" style="width:30%;height:40px;border-radius:14px;">Add To Cart</button>

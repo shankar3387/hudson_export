@@ -36,6 +36,7 @@
                      <th scope="col">Status</th>
                      <th scope="col">Total</th>
                      <th scope="col">Actions</th>
+                     <th>Paypal</th>
                   </tr>
                </thead>
                <tbody>
@@ -47,14 +48,20 @@
                      <td><?=$row['tbl_order_status']?></td>
                      <td>$<?=$row['tbl_total_amount']?> for <?=$row['tbl_order_quantity']?> item</td>
                      <td><a href="<?=base_url('ViewOrder/').$row['id']?>" class="btn btn-primary"><i class="fa fa-eye"></i> View</a></td>
+                     <td><a href='<?=base_url('paypal/').$row['id']?>' class='btn btn-success btn-secondary float-right'>Pay</a></td>
                   </tr>
                   <?php }} ?>
                </tbody>
             </table>
          </div>
       </div>
+      <div class="form-row">
+         <div class="col-md-2"></div>
+         <div class="form-group col-md-8">
+               <button href='<?=base_url('paypal/')?>' class='btn btn-success btn-secondary float-right'>Pay</button>
+         </div>
+      </div>
    </div>
 </div>
-<div></div>
 </section>
 <?= $layouts['footer']?>

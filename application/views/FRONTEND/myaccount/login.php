@@ -169,23 +169,5 @@ $('#registration_form').validate({
     },
     
   },
-  submitHandler:function(form){
-        var formdata = new FormData(form);
-        $.ajax({
-          url:'<?php base_url()?>dologin',
-          data:formdata,
-          type:'post',
-          dataType:'json',
-          processData: false,
-        contentType: false,
-        success:function(data){  
-            console.log(data);
-        },
-        error:function(data){
-            console.log(data);
-        }
-
-      })
-    },
 });
 </script>
