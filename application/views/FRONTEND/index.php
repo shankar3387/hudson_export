@@ -96,7 +96,7 @@
                         <img src="<?=base_url('theme/front-end/assets/img/gallery/').$key['product_image']?>" alt="">
                         <div class="favorit-items">
                             <!-- <span class="flaticon-heart"></span> -->
-                            <img src="<?=base_url('theme/front-end/')?>assets/img/gallery/favorit-card.png" alt="">
+                            <i class="far fa-heart" onclick="wishlist(<?=$row['id']?>);"></i>
                         </div>
                     </div>
                     <div class="popular-caption">

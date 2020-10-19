@@ -63,7 +63,7 @@
                         <button class="submit-btn2" onclick="addtocart(<?=$Product[0]['id']?>);" type="submit" style="width:30%;height:40px;border-radius:14px;">Add To Cart</button>
                     </div><br>
                     <div class="submit-info">
-                        <button class="submit-btn2" onclick="wishlist(<?=$Product[0]['id']?>)" type="submit" style="width: 30%;height: 40px;border-radius: 14px;"><a href="signIn.html">Add to wishlist</a></button>
+                        <button class="submit-btn2" onclick="wishlist(<?=$Product[0]['id']?>)" type="submit" style="width: 30%;height: 40px;border-radius: 14px;">Add to wishlist</button>
                     </div>
 
                     <?php if(!empty($this->session->flashdata('enquiryerror'))){ ?>

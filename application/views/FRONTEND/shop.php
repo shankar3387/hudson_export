@@ -79,9 +79,9 @@
                                     <div class="single-new-arrival mb-50 text-center">
                                         <div class="popular-img">
                                             <img src="<?=base_url().$row['product_pic']?>" alt="" style="height:335px">
-                                            <div class="favorit-items">
+                                            <div class="favorit-items" >
                                                 <!-- <span class="flaticon-heart"></span> -->
-                                                <img src="<?=base_url('theme/front-end/')?>assets/img/gallery/favorit-card.png" alt="">
+                                                <i class="far fa-heart fa-lg" onclick="wishlist(<?=$row['id']?>);"></i>
                                             </div>
                                         </div>
                                         <!-- <?= var_dump($row) ?> -->

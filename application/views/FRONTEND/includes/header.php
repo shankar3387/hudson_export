@@ -145,7 +145,7 @@ function unhover7(element) {
                                         <li><a href="<?=base_url('Myaccount')?>">My Account</a></li>
                                         <li><a href="<?=base_url('')?>">Home</a></li>
                                         <li><a href="<?=base_url('Shop')?>">shop</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="<?=base_url('about')?>">About</a></li>
                                         <!-- <li><a href="blog.html">Blog</a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">Blog</a></li>
@@ -153,7 +153,7 @@ function unhover7(element) {
                                                 <li><a href="elements.html">Elements</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="<?=base_url('contact')?>">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -172,8 +172,8 @@ function unhover7(element) {
                             <div class="search d-none d-md-block">
                                 <ul class="d-flex align-items-center">
                                     <li class="mr-15">
-                                        <div class="nav-search search-switch">
-                                            <i class='ti-woocommerce-wishlist'></i>
+                                        <div class="nav-search">
+                                            <a href="<?=base_url('WishList')?>"><i class='fab fa-gratipay'></i></a>
                                         </div>
                                     </li>
                                     <li>

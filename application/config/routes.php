@@ -143,8 +143,8 @@ $route['submitReview'] = 'Frontend/AccountController/savereview';
 $route['submitContact'] = 'Frontend/AccountController/Saveenquiry';
 
 $route['product_details/(:num)'] = 'welcome/productList/$1';
-$route['contact.html'] = 'welcome/contactPage/';
-$route['about.html'] = 'welcome/aboutPage';
+$route['contact'] = 'welcome/contactPage/';
+$route['about'] = 'welcome/aboutPage';
 $route['Footer/aboutfooter.html'] = 'footer/aboutPage';
 $route['googlepatner.html'] = 'footer/googlepartnerpage';
 $route['Footer/help.html'] = 'footer/helppage';
